@@ -24,29 +24,93 @@
       </h1>
     </div>
 
-    <section aria-label="Pokémon cards">
-      <div class="grid grid-cols-1 gap-6 px-4 py-6 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
-        <article class="overflow-hidden rounded-xl bg-white shadow-md">
-          <img src="decidueye_Card.png" alt="Decidueye" class="bg-gray-100 object-contain p-4">
+    <section aria-label="Pokémon cards flex flex-col">
+      <div class="grid grid-cols-6 gap-4 md:4 lg:4">
+        <article class="flex flex-col text-center hover:bg-yellow-100 shadow-lg">
+          <img src="decidueye_Card.png" alt="Decidueye" class="">
           <h2 class="px-4 py-3 text-center text-lg font-semibold">Decidueye</h2>
+          <p class="">Informacio extra sobre la carta</p>
+          <button (click)= "boton()" class="bg-amber-600 rounded-xl "> Mes info</button>
         </article>
 
-        <article class="overflow-hidden rounded-xl bg-white shadow-md">
-          <img src="infernape_Card.png" alt="Infernape" class="bg-gray-100 object-contain p-4">
-          <h2 class="px-4 py-3 text-center text-lg font-semibold">Infernape</h2>
+        
+        <article
+          class="flex flex-col overflow-hidden rounded-xl bg-white text-center
+                shadow-lg shadow-gray-500/50
+                
+               hover:shadow-2xl hover:shadow-amber-600/40">
+          <img
+            src="decidueye_Card.png"
+            alt="Decidueye"
+            class="w-full bg-gray-100 object-contain p-4">
+
+          <h2 class="px-4 py-3 text-lg font-semibold">
+            Decidueye
+          </h2>
+
+          <p class="px-4 pb-4 text-gray-600">
+            Informació extra sobre la carta.
+          </p>
+
+          <button
+            (click)="boton()"
+            class="mx-4 mb-4 rounded-xl bg-amber-600 px-4 py-2
+                  text-white transition-colors duration-300
+                  hover:bg-amber-700">
+            Més info
+          </button>
         </article>
 
-        <article class="overflow-hidden rounded-xl bg-white shadow-md">
+
+        <article class="flex flex-col text-center hover:bg-yellow-100 shadow-lg">
           <img src="slowpoke_card.jpg" alt="Slowpoke" class="bg-gray-100 object-contain p-4">
           <h2 class="px-4 py-3 text-center text-lg font-semibold">Slowpoke</h2>
+          <p class="">Informacio extra sobre la carta</p>
+          <button (click)= "boton()" class="bg-amber-600 rounded-xl px-2 py-2"> Mes info</button>
         </article>
 
-        <article class="overflow-hidden rounded-xl bg-white shadow-md">
+        <article class="flex flex-col text-center hover:bg-yellow-100 shadow-lg">
           <img src="charizard_Card.png" alt="Charizard" class="bg-gray-100 object-contain p-4">
           <h2 class="px-4 py-3 text-center text-lg font-semibold">Charizard</h2>
+          <p class="">Informacio extra sobre la carta</p>
+          <button (click)= "boton()" class="bg-amber-600 rounded-xl  p-2"> Mes info</button>
+        </article>
+
+        <article class="flex flex-col text-center hover:bg-yellow-100 shadow-amber-600-lg rounded-xl">
+          <img src="decidueye_Card.png" alt="Decidueye" class="">
+          <h2 class="px-4 py-3 text-center text-lg font-semibold">Decidueye</h2>
+          <p class="">Informacio extra sobre la carta</p>
+          <button (click)= "boton()" class="bg-amber-600 rounded-xl "> Mes info</button>
+        </article>
+
+        <article class="flex flex-col text-center shadow-2xl p-2 ">
+          <img src="decidueye_Card.png" alt="Decidueye" class="">
+          <h2 class="px-4 py-3 text-center text-lg font-semibold">Decidueye</h2>
+          <p class="">Informacio extra sobre la carta</p>
+          <button (click)= "boton()" class="bg-amber-600 rounded-xl "> Mes info</button>
         </article>
       </div>
     </section>
+
+
+    <button class=" dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">Fosc</button>
+
+
+    <form class="bg-amber-800">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" > <br>
+
+      <label for="">Correu electronic:</label>
+      <input type="text" ><br>
+
+      <label for="">Assumpte:</label>
+      <input type="text" ><br>
+    </form>
+
+
+
+
+
 
 
 
